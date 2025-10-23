@@ -8,8 +8,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary-1: var(--color-agro-green-100);
+  --color-primary-2: var(--color-agro-green-600);
+
+  --color-agro-green-100: #FFFBE7;
+  --color-agro-green-200: #88FFDB;
+  --color-agro-green-300: #0CE8A5;
+  --color-agro-green-400: #0F7959;
+  --color-agro-green-500: #0F7253;
+  --color-agro-green-600: #0A4132;
 }
 
 @media (prefers-color-scheme: dark) {
