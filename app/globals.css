@@ -1,34 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
 
-  --color-primary-1: var(--color-agro-green-100);
-  --color-primary-2: var(--color-agro-green-600);
+    --color-primary-1: var(--color-agro-green-100);
+    --color-primary-2: var(--color-agro-green-600);
 
-  --color-agro-green-100: #FFFBE7;
-  --color-agro-green-200: #88FFDB;
-  --color-agro-green-300: #0CE8A5;
-  --color-agro-green-400: #0F7959;
-  --color-agro-green-500: #0F7253;
-  --color-agro-green-600: #0A4132;
+    --color-agro-green-100: #fffbe7;
+    --color-agro-green-200: #88ffdb;
+    --color-agro-green-300: #0ce8a5;
+    --color-agro-green-400: #0f7959;
+    --color-agro-green-500: #0f7253;
+    --color-agro-green-600: #0a4132;
+
+    --font-heading: "Familjen Grotesk", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+@utility section-bg {
+    width: 100%;
+}
+
+@utility section-content {
+    width: 100%;
+    max-width: 80rem;
+    justify-self: center;
+    padding: 0 1.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
