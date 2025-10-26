@@ -45,15 +45,10 @@ export default function VideoPlayer(props: ComponentPropsWithoutRef<"video">) {
 
   return (
     <div className="relative">
-      <video
-        ref={playerRef}
-        className="-z-20"
-        muted={isMuted}
-        {...props}
-      ></video>
+      <video ref={playerRef} muted={isMuted} playsInline {...props}></video>
       <button
         onClick={muteToggle}
-        className="absolute bottom-4 left-4 z-20 text-agro-green-100 rounded-full bg-black/50 p-2 opacity-30 hover:opacity-100 active:bg-agro-green-300/50"
+        className="absolute bottom-4 left-4 text-agro-green-100 rounded-full bg-black/50 p-2 opacity-30 hover:opacity-100 active:bg-agro-green-300/50"
       >
         {!isMuted ? <VolumeUp size={20} /> : <VolumeDown size={20} />}
       </button>
