@@ -1,0 +1,42 @@
+export default function TwitterIcon({
+  color = "currentColor",
+  size = 24,
+  className = "",
+  ...props
+}) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      height={size}
+      width={size}
+      className={className}
+      {...props}
+    >
+      <g clip-path="url(#clip0_424_269)">
+        <mask
+          id="mask0_424_269"
+          // style="mask-type:luminance"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="18"
+          height="18"
+        >
+          <path d="M0 0H18V18H0V0Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_424_269)">
+          <path
+            d="M14.175 0.843262H16.9354L10.9054 7.75269L18 17.1564H12.4457L8.09229 11.4543L3.11657 17.1564H0.353571L6.80271 9.76355L0 0.844547H5.69571L9.62486 6.05555L14.175 0.843262ZM13.2043 15.5004H14.7343L4.86 2.41312H3.21943L13.2043 15.5004Z"
+            fill={color}
+          />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_424_269">
+          <rect width="18" height="18" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
