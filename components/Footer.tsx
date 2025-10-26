@@ -48,9 +48,9 @@ export default function Footer() {
               <a>
                 <YoutubeIcon />
               </a>
-              <a>
+              {/*<a>
                 <TwitterIcon />
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>
