@@ -1,4 +1,5 @@
 import ComprofSection from "@/components/sections/Comprof";
+import ContactSection from "@/components/sections/Contacs";
 import FAQSection from "@/components/sections/FAQ";
 import FeaturesSection from "@/components/sections/Features";
 import HRSection from "@/components/sections/HR";
@@ -17,6 +18,7 @@ export default function Home() {
       <PartnersSection />
       <HRSection />
       <FAQSection />
+      <ContactSection />
     </div>
   );
 }
