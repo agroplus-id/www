@@ -42,6 +42,7 @@
     max-width: 80rem;
     justify-self: center;
     padding: 0 1.5rem;
+    overflow-x: clip;
 }
 
 @utility body {
