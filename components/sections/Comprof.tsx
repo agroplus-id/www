@@ -5,7 +5,7 @@ export default function ComprofSection() {
     <section className="section-bg bg-agro-green-600 text-agro-green-100">
       <div className="section-content py-16">
         <div id="comprof-header" className="flex flex-col lg:flex-row gap-4">
-          <h2 className="flex flex-1 font-heading font-bold text-4xl tracking-tight">
+          <h2 className="flex flex-1 heading-2">
             Solusi Cerdas untuk Pertanian Indonesia yang Lebih Sehat dan
             Berkelanjutan
           </h2>
