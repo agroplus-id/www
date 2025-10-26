@@ -9,29 +9,24 @@ export default function FAQSection() {
   const faqContent: FAQ[] = useMemo(
     () => [
       {
-        question: "Lorem Ipsum Dolor sit Amet?",
+        question: "Aplikasi apa sih Agroplus?",
         answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+          "Agroplus adalah platform digital berbasis kecerdasan buatan (AI) yang membantu petani meningkatkan hasil dan efisiensi pertanian. Melalui teknologi pengenalan citra (image recognition), Agroplus mampu mendeteksi hama, penyakit, dan kekurangan nutrisi tanaman hanya dengan foto daun, lalu memberikan rekomendasi pupuk dan pestisida yang sesuai.",
       },
       {
-        question: "Lorem Ipsum Dolor sit Amet?",
+        question: "Apa saja yang sudah Agroplus lakukan?",
         answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+          "Agroplus telah mencapai berbagai pencapaian penting dalam pengembangan teknologi pertanian digital. Kami telah bermitra dengan lebih dari 50 petani di wilayah Karangploso dan Lamongan, menjalankan uji coba lapangan secara langsung untuk memastikan efektivitas sistem deteksi tanaman berbasis AI. Selain itu, Agroplus juga berhasil mengikuti program inkubasi Innovation Lab Kedutaan Inggris melalui Instellar dan DIKST UB melalui Brawijaya Start up Academy, yang memperkuat validasi model bisnis dan inovasi kami. Dukungan dari Wakil Menteri Dikti Nasional, Prof. Fauzan, turut menjadi bukti komitmen kami dalam membangun solusi pertanian yang berkelanjutan. ",
       },
       {
-        question: "Lorem Ipsum Dolor sit Amet?",
+        question: "Apa saja fitur Agroplus?",
         answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+          "Agroplus memiliki beberapa fitur utama yang dirancang untuk membantu petani secara praktis dan efisien. Fitur Scan Daun memungkinkan pengguna mendeteksi hama, penyakit, dan kekurangan nutrisi hanya dengan memotret daun tanaman. Fitur Rekomendasi Pupuk dan Pestisida memberikan saran dosis dan jenis yang sesuai berdasarkan hasil analisis. Selain itu, terdapat Monitoring Lahan untuk memantau kesehatan tanaman dari waktu ke waktu, serta Konsultasi Ahli yang menghubungkan petani dengan pakar pertanian. Ke depan, Agroplus juga akan menghadirkan fitur Marketplace agar petani dapat membeli kebutuhan pertanian langsung dari sumber terpercaya.",
       },
       {
-        question: "Lorem Ipsum Dolor sit Amet?",
+        question: "Bagaimana cara kerja fitur scan pada Agroplus?",
         answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
-      },
-      {
-        question: "Lorem Ipsum Dolor sit Amet?",
-        answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+          "Proses scan di Agroplus didasarkan pada teknologi kecerdasan buatan (AI) yang menggunakan model machine learning YOLO-V8. Model ini telah dilatih dengan ribuan dataset gambar daun tanaman yang mencakup berbagai kondisi kesehatan tanaman. Data tersebut dikombinasikan dengan hasil penelitian akademik dan uji lapangan bersama petani untuk memastikan tingkat akurasi tinggi dalam mendeteksi hama, penyakit, serta kekurangan nutrisi pada tanaman.",
       },
     ],
     [],
@@ -63,7 +58,7 @@ export default function FAQSection() {
               >
                 <ArrowDown size={36} />
               </button>
-              <h3 className="text-2xl font-bold">{q.question}</h3>
+              <h3 className="text-2xl font-semibold">{q.question}</h3>
               <AnimatePresence>
                 {activeIndex == i && (
                   <motion.div
