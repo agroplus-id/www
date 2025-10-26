@@ -5,12 +5,12 @@ import ChevronRight from "../icons/ChevronRight";
 
 export default function LandingSection() {
   return (
-    <section className="section-bg">
+    <section className="section-bg relative">
       <Image
         src="/images/farmer-plowing-field.jpg"
         alt="Farmer plowing field using bull"
         fill
-        className="absolute object-cover -z-20"
+        className="object-cover -z-20"
       />
       <div className="absolute size-full bg-linear-to-b from-black/80 to-black/0 -z-10" />
       <div className="section-content w-full h-screen pt-32 space-y-6 text-primary-1 z-20">
