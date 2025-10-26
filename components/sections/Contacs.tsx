@@ -2,7 +2,10 @@ import Button from "../buttons/Button";
 
 export default function ContactSection() {
   return (
-    <section className="section-bg bg-agro-green-600 text-agro-green-100">
+    <section
+      id="contacs"
+      className="section-bg bg-agro-green-600 text-agro-green-100"
+    >
       <div className="flex flex-col section-content py-16 items-center gap-8">
         <div id="comprof-header" className="flex flex-col items-center gap-4">
           <h2 className="flex flex-1 heading-2">Punya Pertanyaan Lain?</h2>

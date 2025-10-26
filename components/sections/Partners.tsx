@@ -40,7 +40,10 @@ export default function PartnersSection() {
 
   return (
     <>
-      <section className="section-bg bg-agro-green-100 text-agro-green-600">
+      <section
+        id="partners"
+        className="section-bg bg-agro-green-100 text-agro-green-600"
+      >
         <div className="section-content py-16 flex flex-col gap-16 items-center">
           <div id="comprof-header" className="flex flex-col lg:flex-row gap-4">
             <h2 className="flex flex-1 heading-2">

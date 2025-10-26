@@ -26,7 +26,10 @@ export default function MetricsSection() {
   );
 
   return (
-    <section className="section-bg bg-agro-green-600 text-agro-green-100">
+    <section
+      id="metrics"
+      className="section-bg bg-agro-green-600 text-agro-green-100"
+    >
       <div className="section-content flex flex-col gap-20 py-16 items-center">
         <div className="flex flex-col gap-6 max-w-3xl">
           <h2 className="heading-2 text-center">

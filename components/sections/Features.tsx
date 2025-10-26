@@ -26,7 +26,7 @@ export default function FeaturesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="section-bg h-fit bg-agro-green-100">
+    <section id="features" className="section-bg h-fit bg-agro-green-100">
       <div className="flex flex-row h-screen w-full text-agro-green-600">
         {/*phone section*/}
         <div className="flex flex-2 w-full h-full section-content items-center justify-center">

@@ -47,7 +47,10 @@ export default function HRSection() {
   );
 
   return (
-    <section className="section-bg bg-agro-green-600 text-agro-green-100">
+    <section
+      id="hr"
+      className="section-bg bg-agro-green-600 text-agro-green-100"
+    >
       <div className="flex flex-col section-content py-16 gap-20">
         <div
           id="comprof-header"

@@ -2,7 +2,10 @@ import VideoPlayer from "../VideoPlayer";
 
 export default function ComprofSection() {
   return (
-    <section className="section-bg bg-agro-green-600 text-agro-green-100">
+    <section
+      id="comprof"
+      className="section-bg bg-agro-green-600 text-agro-green-100"
+    >
       <div className="section-content py-16">
         <div id="comprof-header" className="flex flex-col lg:flex-row gap-4">
           <h2 className="flex flex-1 heading-2">

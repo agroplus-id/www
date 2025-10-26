@@ -28,15 +28,13 @@ export default function Navbar() {
             <span className="font-normal italic">PLUS</span>
           </h1>
         </div>
-        <div
-          id="navigation"
-          className="flex flex-grow justify-end flex-row gap-9"
-        >
-          <a href="#">Tentang Kami</a>
-          <a href="#">Layanan Kami</a>
-          <a href="#">Mitra Kami</a>
-          <a href="#">Tim Kami</a>
-          <a href="#">FAQ</a>
+        <div id="navigation" className="flex grow justify-end flex-row gap-9">
+          <a href="#comprof">Tentang Kami</a>
+          <a href="#features">Layanan Kami</a>
+          <a href="#metrics">Pencapaian Kami</a>
+          <a href="#partners">Mitra Kami</a>
+          <a href="#hr">Tim Kami</a>
+          <a href="#faq">FAQ</a>
         </div>
       </div>
     </section>
