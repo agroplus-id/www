@@ -64,9 +64,9 @@ export default function PartnersSection() {
             className="marquee-container"
             style={{
               WebkitMaskImage:
-                "linear-gradient(to right, transparent, black 10%, black 20% black 20% black 90%, transparent)",
+                "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
               maskImage:
-                "linear-gradient(to right, transparent, black 10%, black 20% black 20% black 90%, transparent)",
+                "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
               WebkitMaskRepeat: "no-repeat",
               maskRepeat: "no-repeat",
             }}

@@ -1,7 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 import VideoPlayer from "../VideoPlayer";
 
 const textContent = [
