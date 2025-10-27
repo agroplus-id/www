@@ -22,11 +22,22 @@ export default function ComprofSection() {
           </p>
         </div>
       </div>
-      <VideoPlayer
-        controls
-        src="/videos/comprof-landscape.mp4"
-        loop
-      ></VideoPlayer>
+      <div className="section-bg bg-black">
+        <VideoPlayer
+          controls
+          loop
+          className="aspect-9/16 lg:aspect-video w-full section-content px-0"
+        >
+          <source
+            src="/videos/comprof-landscape.mp4"
+            media="(min-width: 68rem)"
+          />
+          <source
+            src="/videos/comprof-portrait.mp4"
+            media="(max-width: 68rem)"
+          />
+        </VideoPlayer>
+      </div>
     </section>
   );
 }
