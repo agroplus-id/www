@@ -52,6 +52,7 @@ export default function MetricsSection() {
               <Image
                 src={v.imagePath}
                 alt={v.descrption}
+                sizes="720px"
                 fill
                 className="object-cover"
               />
