@@ -35,14 +35,16 @@
 
 @utility section-bg {
     width: 100%;
+    @apply flex flex-col items-center;
 }
 
 @utility section-content {
     width: 100%;
     max-width: 80rem;
     justify-self: center;
+    align-self: center;
     padding: 0 1.5rem;
-    overflow-x: clip;
+    /*overflow-x: clip;*/
 }
 
 @utility body {
