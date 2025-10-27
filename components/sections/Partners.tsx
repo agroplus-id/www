@@ -76,9 +76,9 @@ export default function PartnersSection() {
                 <Image
                   src={v.path}
                   alt={v.name}
+                  style={{ objectFit: "contain" }}
                   fill
                   sizes="240px"
-                  objectFit="contain"
                 />
               </div>
             ))}
@@ -96,7 +96,8 @@ export default function PartnersSection() {
             display: flex;
             flex-direction: row;
             gap: 2rem;
-            width: calc(var(--item-width) * var(--n));
+            width: 100%;
+            max-width: calc(var(--item-width) * var(--n));
             overflow: hidden;
             padding-block: 5px;
             height: var(--item-height);
@@ -105,6 +106,7 @@ export default function PartnersSection() {
           .marquee-item {
             width: var(--item-width);
             height: var(--item-height);
+            flex-shrink: 0;
 
             offset: shape(from calc(var(--item-width)/-2) 50%, hline by calc(sibling-count() * var(--item-width) * 1.15));
             animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());
