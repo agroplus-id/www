@@ -32,7 +32,7 @@ export default function FeaturesSection() {
 
   return (
     <section id="features" className="section-bg h-fit bg-agro-green-100">
-      <div className="section-content flex flex-row h-screen w-full text-agro-green-600">
+      <div className="section-content flex flex-col lg:flex-row py-16 gap-8 h-fit lg:h-screen w-full text-agro-green-600">
         {/*phone section*/}
         <div className="flex flex-2 w-full h-full section-content items-center justify-center">
           <div className="aspect-9/18.5 rounded-[50px] bg-white w-fit border-8 shadow-2xl border-agro-green-600 overflow-clip">
