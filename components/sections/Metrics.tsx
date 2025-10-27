@@ -12,7 +12,7 @@ export default function MetricsSection() {
         imagePath: "/images/rice-fields.jpg",
       },
       {
-        header: "99%",
+        header: "97%",
         descrption: "Akurasi deteksi penyakit pada tanaman",
         imagePath: "/images/woman-farmer.jpg",
       },
@@ -43,11 +43,11 @@ export default function MetricsSection() {
             pertanian yang lebih cerdas, efisien, dan berkelanjutan.
           </p>
         </div>
-        <div className="flex flex-row gap-4 justify-center w-full">
+        <div className="grid grid-cols-2 justify-items-stretch lg:flex lg:flex-row gap-4 justify-center w-full">
           {metrics.map((v, i) => (
             <div
               key={i}
-              className="aspect-9/16 relative flex rounded-4xl overflow-clip w-full p-10 min-w-2xs max-w-xs flex-col justify-end box-shadow shadow-xl"
+              className={`${i == 0 && "col-span-2 h-62 lg:h-fit"} aspect-3/5 lg:aspect-9/16 relative flex rounded-4xl overflow-clip w-full p-10 lg:min-w-2xs lg:max-w-xs flex-col justify-end box-shadow shadow-xl`}
             >
               <Image
                 src={v.imagePath}
