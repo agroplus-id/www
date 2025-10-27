@@ -28,7 +28,7 @@ export default function HRCard({
               {description}
             </p>
           </div>
-          <Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>
+          {/*<Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>*/}
         </div>
       </div>
       <style jsx>{`

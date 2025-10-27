@@ -22,7 +22,7 @@ export default function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hubungi Kami
+            <p className="text-nowrap">Hubungi Kami</p>
           </Button>
         </div>
       </div>

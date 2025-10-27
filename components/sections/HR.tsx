@@ -28,20 +28,20 @@ export default function HRSection() {
           "Departemen CMO berkomitmen untuk menciptakan strategi pemasaran yang berdampak, kreatif, dan terukur. Kami memastikan setiap kampanye berkontribusi nyata terhadap pertumbuhan AGROPLUS dan peningkatan kepercayaan publik terhadap inovasi di Starup kami",
         gradient: ["#4CCC77", "#48B76D"],
       },
-      {
-        image: "/images/departements/group/COO.png",
-        title: "Operational Officer",
-        description:
-          "Departemen COO memastikan AGROPLUS terus bergerak dengan keunggulan operasional, kolaborasi strategis, dan efisiensi berkelanjutan. Dengan fokus pada eksekusi yang presisi, manajemen sumber daya yang efektif, dan kemitraan yang saling menguatkan, kami menciptakan fondasi kokoh bagi pertumbuhan jangka panjang perusahaan.",
-        gradient: ["#B477D6", "#994DC5"],
-      },
-      {
-        image: "/images/departements/group/CEO.png",
-        title: "Executive Officer",
-        description:
-          "Departemen COO memastikan AGROPLUS terus bergerak dengan keunggulan operasional, kolaborasi strategis, dan efisiensi berkelanjutan. Dengan fokus pada eksekusi yang presisi, manajemen sumber daya yang efektif, dan kemitraan yang saling menguatkan, kami menciptakan fondasi kokoh bagi pertumbuhan jangka panjang perusahaan.",
-        gradient: ["#D3BB7E", "#C5A34D"],
-      },
+      // {
+      //   image: "/images/departements/group/COO.png",
+      //   title: "Operational Officer",
+      //   description:
+      //     "Departemen COO memastikan AGROPLUS terus bergerak dengan keunggulan operasional, kolaborasi strategis, dan efisiensi berkelanjutan. Dengan fokus pada eksekusi yang presisi, manajemen sumber daya yang efektif, dan kemitraan yang saling menguatkan, kami menciptakan fondasi kokoh bagi pertumbuhan jangka panjang perusahaan.",
+      //   gradient: ["#B477D6", "#994DC5"],
+      // },
+      // {
+      //   image: "/images/departements/group/CEO.png",
+      //   title: "Executive Officer",
+      //   description:
+      //     "Departemen COO memastikan AGROPLUS terus bergerak dengan keunggulan operasional, kolaborasi strategis, dan efisiensi berkelanjutan. Dengan fokus pada eksekusi yang presisi, manajemen sumber daya yang efektif, dan kemitraan yang saling menguatkan, kami menciptakan fondasi kokoh bagi pertumbuhan jangka panjang perusahaan.",
+      //   gradient: ["#D3BB7E", "#C5A34D"],
+      // },
     ],
     [],
   );

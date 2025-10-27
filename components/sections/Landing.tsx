@@ -14,10 +14,10 @@ export default function LandingSection() {
       />
       <div className="absolute size-full bg-linear-to-b from-black/80 to-black/0 -z-10" />
       <div className="section-content w-full h-screen pt-32 space-y-6 text-primary-1 z-20">
-        <h1 className="font-heading font-bold text-[4rem]/14 tracking-tight">
+        <h1 className="font-heading font-bold text-6xl/12 lg:text-[4rem]/14 tracking-tight">
           Solusi Pertanian <br /> dari Hulu ke Hilir
         </h1>
-        <p className="max-w-2xl text-xl">
+        <p className="max-w-2xl text-lg lg:text-xl">
           Melalui inovasi digital dan kecerdasan buatan, Agroplus menghadirkan
           solusi menyeluruh bagi sektor pertanian. Dari pengelolaan lahan hingga
           pemasaran hasil panen, semuanya terintegrasi dalam satu platform yang

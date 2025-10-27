@@ -59,7 +59,7 @@ export default function FeaturesSection() {
                 className={`flex flex-col gap-6`}
                 onMouseEnter={() => setActiveIndex(i)}
               >
-                <h2 className="heading-2">{h}</h2>
+                <h2 className="heading-2 text-center lg:text-left">{h}</h2>
                 <AnimatePresence initial={false}>
                   {activeIndex == i && (
                     <motion.div
@@ -69,7 +69,7 @@ export default function FeaturesSection() {
                       transition={{ duration: 0.1, ease: "easeInOut" }}
                       style={{ overflow: "hidden" }}
                     >
-                      <p>{p}</p>
+                      <p className="text-center lg:text-left">{p}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>

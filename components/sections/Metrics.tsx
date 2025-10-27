@@ -47,7 +47,7 @@ export default function MetricsSection() {
           {metrics.map((v, i) => (
             <div
               key={i}
-              className={`${i == 0 && "col-span-2 h-62 lg:h-fit"} aspect-3/5 lg:aspect-9/16 relative flex rounded-4xl overflow-clip w-full p-10 lg:min-w-2xs lg:max-w-xs flex-col justify-end box-shadow shadow-xl`}
+              className={`${i == 0 && "col-span-2 h-62 lg:h-fit"} aspect-3/5 lg:aspect-9/16 relative flex rounded-3xl lg:rounded-4xl overflow-clip w-full p-6 lg:p-10 lg:min-w-2xs lg:max-w-xs flex-col justify-end box-shadow shadow-xl`}
             >
               <Image
                 src={v.imagePath}
@@ -57,10 +57,10 @@ export default function MetricsSection() {
               />
               <div className="absolute bottom-0 left-0 size-full bg-linear-to-t from-black from-5% via-black/60 via-25% to-black/0 to-50%" />
               <div className="text-agro-green-100 flex flex-col gap-2 z-20">
-                <h3 className="font-bold text-4xl w-full text-agro-green-300">
+                <h3 className="font-bold text-xl lg:text-4xl w-full text-agro-green-300">
                   {v.header}
                 </h3>
-                <p className="w-full">{v.descrption}</p>
+                <p className="w-full text-xs lg:text-lg">{v.descrption}</p>
               </div>
             </div>
           ))}
