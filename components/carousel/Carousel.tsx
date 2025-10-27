@@ -126,7 +126,7 @@ export default function Carousel({ children }: CarouselProps) {
   return (
     <>
       <div
-        className="embla flex flex-col space-y-4 justif-start"
+        className="embla flex flex-col space-y-4 justif-start w-full"
         style={{
           WebkitMaskImage:
             "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
