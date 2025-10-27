@@ -9,7 +9,12 @@ export default function HRCard({
 }: DeptData) {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row aspect-9/16 lg:aspect-video w-full hr-card rounded-4xl gap-4">
+      <div
+        className="flex flex-col-reverse lg:flex-row aspect-4/3 lg:aspect-video w-full rounded-4xl gap-4"
+        style={{
+          background: `radial-gradient(at 25% 25%, ${gradient[1]}, ${gradient[0]} )`,
+        }}
+      >
         <div className="flex flex-2 relative justify-end content-end h-full aspect-3/4">
           <Image
             src={image}
@@ -31,15 +36,6 @@ export default function HRCard({
           {/*<Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>*/}
         </div>
       </div>
-      <style jsx>{`
-        .hr-card {
-          background-image: radial-gradient(
-            circle at 100%,
-            ${gradient[1]},
-            ${gradient[0]}
-          );
-        }
-      `}</style>
     </>
   );
 }
