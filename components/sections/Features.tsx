@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import VideoPlayer from "../VideoPlayer";
 
@@ -32,7 +31,7 @@ export default function FeaturesSection() {
 
   return (
     <section id="features" className="section-bg h-fit bg-agro-green-100">
-      <div className="section-content flex flex-col lg:flex-row py-16 gap-8 h-fit lg:h-screen w-full text-agro-green-600">
+      <div className="section-content flex flex-col lg:flex-row py-16 gap-8 h-fit min-h-min lg:h-screen w-full text-agro-green-600">
         {/*phone section*/}
         <div className="flex flex-2 w-full h-full section-content items-center justify-center">
           <div className="aspect-9/18.5 rounded-[50px] bg-white w-fit border-8 shadow-2xl border-agro-green-600 overflow-clip">
@@ -49,31 +48,27 @@ export default function FeaturesSection() {
           </div>
         </div>
         {/*text  section*/}
-        <div className="flex flex-3 flex-col gap-12 justify-center">
+        <div className="flex flex-3 flex-col gap-6 justify-center">
           {textContent.map(({ h, p }, i) => {
+            const isActive = activeIndex == i;
+            const activate = () => setActiveIndex(i);
+
             return (
-              <motion.div
+              <div
                 key={i}
-                layout
-                transition={{ layout: { duration: 0.1, ease: "easeInOut" } }}
-                className={`flex flex-col gap-6`}
-                onMouseEnter={() => setActiveIndex(i)}
+                className={`flex flex-col gap-6 transition-opacit duration-150y ${isActive ? "opacicity-100" : "opacity-50"}`}
               >
-                <h2 className="heading-2 text-center lg:text-left">{h}</h2>
-                <AnimatePresence initial={false}>
-                  {activeIndex == i && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0, y: 0 }}
-                      animate={{ opacity: 1, height: "auto", y: 0 }}
-                      exit={{ opacity: 0, height: 0, y: 0 }}
-                      transition={{ duration: 0.1, ease: "easeInOut" }}
-                      style={{ overflow: "hidden" }}
-                    >
-                      <p className="text-center lg:text-left">{p}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                <button onMouseEnter={activate}>
+                  <h2 className="heading-2 text-center lg:text-left">{h}</h2>
+                </button>
+                <div
+                  className={`grid transition-all duration-150 overflow-hidden ease-in-out ${activeIndex == i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="text-center lg:text-left">{p}</p>
+                  </div>
+                </div>
+              </div>
             );
           })}
         </div>
