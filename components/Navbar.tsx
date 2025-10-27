@@ -97,7 +97,7 @@ export default function Navbar() {
             {open ? (
               <MobileLayout links={links} className={navbarColor} />
             ) : (
-              <DesktopLayout links={links} className={navbarColor} />
+              <DesktopLayout links={links} />
             )}
           </AnimatePresence>
           <button onClick={() => setOpen(!open)} className="lg:hidden">
