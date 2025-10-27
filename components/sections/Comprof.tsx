@@ -22,7 +22,11 @@ export default function ComprofSection() {
           </p>
         </div>
       </div>
-      <VideoPlayer src="/videos/comprof-landscape.mp4" loop></VideoPlayer>
+      <VideoPlayer
+        controls
+        src="/videos/comprof-landscape.mp4"
+        loop
+      ></VideoPlayer>
     </section>
   );
 }
