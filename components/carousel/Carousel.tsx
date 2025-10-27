@@ -13,6 +13,7 @@ const CarouselIndicator = ({ emblaApi }: { emblaApi?: EmblaCarouselType }) => {
 
   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
     setSnapList(emblaApi.scrollSnapList());
+    setActiveIndex(emblaApi.selectedScrollSnap());
   }, []);
 
   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
@@ -42,9 +43,10 @@ const CarouselIndicator = ({ emblaApi }: { emblaApi?: EmblaCarouselType }) => {
 
 type CarouselProps = {
   children?: React.ReactNode;
+  className?: string;
 };
 
-export default function Carousel({ children }: CarouselProps) {
+export default function Carousel({ children, className }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: false, containScroll: false },
     [Autoplay()],
@@ -115,10 +117,25 @@ export default function Carousel({ children }: CarouselProps) {
       .on("scroll", tweenScale)
       .on("slideFocus", tweenScale)
       .on("select", tweenScale);
+
+    emblaApi?.reInit();
+
+    return () => {
+      emblaApi
+        .off("reInit", setTweenNodes)
+        .off("reInit", setTweenFactor)
+        .off("reInit", tweenScale)
+        .off("scroll", tweenScale)
+        .off("slideFocus", tweenScale)
+        .off("select", tweenScale);
+    };
   }, [emblaApi, tweenScale, setTweenFactor, setTweenNodes]);
 
   const slides = React.Children.map(children, (child, i) => (
-    <div key={i} className={`embla__slide`}>
+    <div
+      key={i}
+      className={`embla__slide flex-[0_0_80%] min-w-0 translate-x-0 translate-y-0 translate-z-0`}
+    >
       <div className="embla__slide__children">{child}</div>
     </div>
   ));
@@ -126,7 +143,7 @@ export default function Carousel({ children }: CarouselProps) {
   return (
     <>
       <div
-        className="embla flex flex-col space-y-4 justif-start w-full"
+        className={`flex flex-col gap-8 justif-start ${className}`}
         style={{
           WebkitMaskImage:
             "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
@@ -136,35 +153,13 @@ export default function Carousel({ children }: CarouselProps) {
           maskRepeat: "no-repeat",
         }}
       >
-        <div className={`embla__viewport py-2`} ref={emblaRef}>
-          <div className="embla__container">{slides}</div>
+        <div className="embla overflow-hidden" ref={emblaRef}>
+          <div className="embla__container flex flex-row touch-pan-y touch-pinch-zoom">
+            {slides}
+          </div>
         </div>
         <CarouselIndicator emblaApi={emblaApi} />
       </div>
-      <style>
-        {`
-        .embla {
-            /* max-width: 24rem; */
-            margin: auto;
-            --slide-spacing: 0px;
-            --slide-size: 80%;
-        }
-        .embla__viewport {
-            overflow: hidden;
-        }
-        .embla__container {
-            display: flex;
-            touch-action: pan-y pinch-zoom;
-            margin-left: calc(var(--slide-spacing) * -1);
-        }
-        .embla__slide {
-            transform: translate3d(0, 0, 0);
-            flex: 0 0 var(--slide-size);
-            min-width: 0;
-            padding-left: var(--slide-spacing);
-        }
-        `}
-      </style>
     </>
   );
 }

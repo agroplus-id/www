@@ -24,12 +24,12 @@ export default function HRCard({
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div className="flex flex-3 flex-col justify-center gap-6 p-12 w-full">
+        <div className="flex flex-3 flex-col justify-center gap-6 p-8 lg:p-12 w-full">
           <div className="flex flex-col gap-3">
-            <h3 className="font-heading text-4xl font-bold leading-10">
+            <h3 className="font-heading text-2xl lg:text-4xl font-bold leading-10">
               {title}
             </h3>
-            <p className="overflow-hidden text-ellipsis line-clamp-4">
+            <p className="overflow-hidden text-sm lg:text-md text-ellipsis line-clamp-4">
               {description}
             </p>
           </div>
