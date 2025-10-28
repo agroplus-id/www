@@ -13,7 +13,7 @@ export default function LandingSection() {
         className="object-cover -z-20"
       />
       <div className="absolute size-full bg-linear-to-b from-black/80 to-black/0 -z-10" />
-      <div className="section-content w-full h-screen pt-32 space-y-6 text-primary-1 z-20">
+      <div className="section-content w-full h-screen min-h-fit pt-32 space-y-6 text-primary-1 z-20">
         <h1 className="font-heading font-bold text-6xl/12 lg:text-[4rem]/14 tracking-tight">
           Solusi Pertanian <br /> dari Hulu ke Hilir
         </h1>
@@ -23,7 +23,7 @@ export default function LandingSection() {
           pemasaran hasil panen, semuanya terintegrasi dalam satu platform yang
           mendukung pertanian modern dan berkelanjutan.
         </p>
-        <Button className="" rightIcon={<ChevronRight />}>
+        <Button href="#contacts" rightIcon={<ChevronRight />}>
           Hubungi kami
         </Button>
 

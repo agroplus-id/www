@@ -3,7 +3,7 @@ import Button from "../buttons/Button";
 export default function ContactSection() {
   return (
     <section
-      id="contacs"
+      id="contacts"
       className="section-bg bg-agro-green-600 text-agro-green-100"
     >
       <div className="flex flex-col section-content py-16 items-center gap-8">
