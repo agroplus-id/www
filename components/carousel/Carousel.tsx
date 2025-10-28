@@ -48,7 +48,7 @@ type CarouselProps = {
 
 export default function Carousel({ children, className }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: false, containScroll: false },
+    { loop: true, containScroll: false },
     [Autoplay()],
   );
   const tweenFactor = useRef<number>(0);

@@ -23,7 +23,7 @@ export default function ComprofSection() {
         </div>
       </div>
       <div className="section-bg bg-black">
-        <div className="section-content">
+        <div className="section-content px-0">
           <VideoPlayer
             controls
             loop
@@ -31,11 +31,11 @@ export default function ComprofSection() {
           >
             <source
               src="/videos/comprof-landscape.mp4"
-              media="(min-width: 68rem)"
+              media="(min-width: 64rem)"
             />
             <source
               src="/videos/comprof-portrait.mp4"
-              media="(max-width: 68rem)"
+              media="(max-width: 64rem)"
             />
           </VideoPlayer>
         </div>

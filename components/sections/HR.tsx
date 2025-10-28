@@ -65,7 +65,7 @@ export default function HRSection() {
             sama.
           </p>
         </div>
-        <Carousel className="-mx-4 lg:-mx-24">
+        <Carousel className="-mx-4 xl:-mx-12">
           {deptData.map((d, i) => (
             <HRCard key={i} {...d} />
           ))}
