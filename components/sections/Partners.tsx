@@ -64,7 +64,7 @@ export default function PartnersSection() {
             className="marquee-container"
             style={{
               WebkitMaskImage:
-                "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
+                "linear-gradient(to right, transparent, black 20%, black 20%, black 20%, black 90%, transparent)",
               maskImage:
                 "linear-gradient(to right, transparent, black 10%, black 20%, black 20%, black 90%, transparent)",
               WebkitMaskRepeat: "no-repeat",
@@ -72,11 +72,15 @@ export default function PartnersSection() {
             }}
           >
             {partners.map((v, i) => (
-              <div className="relative marquee-item" key={i}>
+              <div
+                className="relative marquee-item will-change-transform"
+                key={i}
+              >
                 <Image
                   src={v.path}
                   alt={v.name}
-                  style={{ objectFit: "contain" }}
+                  className="object-contain"
+                  loading="lazy"
                   fill
                   sizes="240px"
                 />
@@ -91,7 +95,7 @@ export default function PartnersSection() {
             --item-height: 10rem;
             --item-width: 12rem;
             --n: ${partners.length};
-            --d: 12s;
+            --d: 20s;
 
             display: flex;
             flex-direction: row;
@@ -108,9 +112,8 @@ export default function PartnersSection() {
             height: var(--item-height);
             flex-shrink: 0;
 
-            offset: shape(from calc(var(--item-width)/-2) 50%, hline by calc(sibling-count() * var(--item-width) * 1.15));
+            offset: shape(from calc(var(--item-width)/-2) 50%, hline by calc(sibling-count() * var(--item-width) * 1.2));
             animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());
-            will-change: transform;
           }
 
           @keyframes x {
