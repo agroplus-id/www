@@ -31,11 +31,11 @@ export default function Footer() {
             <div className="flex flex-row gap-6">
               <div className="flex flex-col font-medium">
                 <p>Email</p>
-                <p>Telp</p>
+                {/*<p>Telp</p>*/}
               </div>
               <div className="flex flex-col">
                 <p>inquiries@agroplusid.com</p>
-                <p>0183718837281</p>
+                {/*<p>0183718837281</p>*/}
               </div>
             </div>
             <div className="flex flex-row gap-4 items-center h-fit">
