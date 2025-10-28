@@ -14,10 +14,12 @@ export default function ContactSection() {
             berikut:
           </p>
         </div>
-        <div className="flex flex-row w-fit items-center content-center bg-agro-green-100 text-agro-green-600 rounded-full p-2 gap-4 pl-4">
-          <p className="font-medium">inquiries@agroplusid.com</p>
+        <div className="flex flex-col lg:flex-row w-fit items-center content-center lg:bg-white/15 text-agro-green-100 gap-y-4 rounded-full py-2 lg:pr-2">
+          <div className="bg-white/15 lg:bg-transparent px-4 py-2 rounded-full">
+            <p className="font-medium">inquiries@agroplusid.com</p>
+          </div>
           <Button
-            variant="Dark"
+            variant="Light"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=inquiries@agroplusid.com"
             target="_blank"
             rel="noopener noreferrer"

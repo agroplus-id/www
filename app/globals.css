@@ -44,7 +44,7 @@
     justify-self: center;
     align-self: center;
     padding: 0 1.5rem;
-    /*overflow-x: clip;*/
+    overflow-x: clip;
 }
 
 @utility body {

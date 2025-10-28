@@ -19,7 +19,7 @@ export default function Footer() {
                 <span className="font-normal italic">PLUS</span>
               </h1>
             </div>
-            <p className="w-sm">
+            <p className="max-w-sm">
               <span className="font-medium">Agroplus</span> adalah platform
               pertanian berbasis AI yang membantu petani Indonesia meningkatkan
               produktivitas dan efisiensi pertanian.
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           {/*footer body*/}
-          <div className="flex flex-row justify-between items-end">
+          <div className="flex flex-col items-start lg:flex-row justify-between gap-6 lg:items-end">
             <div className="flex flex-row gap-6">
               <div className="flex flex-col font-medium">
                 <p>Email</p>
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         {/*bottom part*/}
-        <div className="flex flex-row justify-between text-xs opacity-60">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 text-xs opacity-60">
           <p>© 2025 Agroplus.</p>
           <p>Kota Malang, Jawa Timur, Indonesia</p>
         </div>

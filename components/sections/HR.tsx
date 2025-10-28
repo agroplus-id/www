@@ -51,7 +51,7 @@ export default function HRSection() {
       id="hr"
       className="section-bg bg-agro-green-600 text-agro-green-100"
     >
-      <div className="flex flex-col section-content py-16 gap-20">
+      <div className="flex flex-col section-content overflow-visible py-16 gap-20">
         <div
           id="comprof-header"
           className="flex flex-col lg:flex-row lg:justify-between gap-4"
