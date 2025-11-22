@@ -12,21 +12,21 @@ export default function HRSection() {
         title: "Technical Officer",
         description:
           "Departemen CTO menghadirkan inovasi yang nyata dan berdampak dari kecerdasan buatan hingga pengembangan sistem digital memastikan setiap teknologi yang dikembangkan memperkuat daya saing AGROPLUS di era modern.",
-        gradient: ["#58CDEE", "#4DABC5"],
+        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
         image: "/images/departements/group/CFO.png",
         title: "Financial Officer",
         description:
           "Departemen CFO menciptakan dampak yang terukur pada setiap tindakan AGROPLUS. Mulai dari stabilitas keuangan hingga ketepatan hukum  memastikan setiap langkah selaras dengan visi pertumbuhan perusahaan kami.",
-        gradient: ["#ED5867", "#C54D59"],
+        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
         image: "/images/departements/group/CMO.png",
         title: "Marketing Officer",
         description:
           "Departemen CMO berkomitmen untuk menciptakan strategi pemasaran yang berdampak, kreatif, dan terukur. Kami memastikan setiap kampanye berkontribusi nyata terhadap pertumbuhan AGROPLUS dan peningkatan kepercayaan publik terhadap inovasi di Starup kami",
-        gradient: ["#4CCC77", "#48B76D"],
+        gradient: ["#C5A34D", "#D3BB7E"],
       },
       // {
       //   image: "/images/departements/group/COO.png",
