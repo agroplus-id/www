@@ -15,7 +15,7 @@ export default function HRSection() {
         gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
-        image: "/images/departements/group/CTO.png",
+        image: "/images/departements/group/CTO.svg",
         title: "Technical Officer",
         description:
           "Departemen CTO menghadirkan inovasi yang nyata dan berdampak dari kecerdasan buatan hingga pengembangan sistem digital memastikan setiap teknologi yang dikembangkan memperkuat daya saing AGROPLUS di era modern.",
