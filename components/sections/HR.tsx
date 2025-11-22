@@ -8,6 +8,13 @@ export default function HRSection() {
   const deptData: DeptData[] = useMemo(
     () => [
       {
+        image: "/images/departements/group/CEO1.svg",
+        title: "Executive Officer",
+        description:
+          "Departemen CEO menghadirkan inovasi yang nyata dan berdampak dari kecerdasan buatan hingga pengembangan sistem digital memastikan setiap teknologi yang dikembangkan memperkuat daya saing AGROPLUS di era modern.",
+        gradient: ["#C5A34D", "#D3BB7E"],
+      },
+      {
         image: "/images/departements/group/CTO.png",
         title: "Technical Officer",
         description:
@@ -27,7 +34,7 @@ export default function HRSection() {
         description:
           "Departemen CMO berkomitmen untuk menciptakan strategi pemasaran yang berdampak, kreatif, dan terukur. Kami memastikan setiap kampanye berkontribusi nyata terhadap pertumbuhan AGROPLUS dan peningkatan kepercayaan publik terhadap inovasi di Starup kami",
         gradient: ["#C5A34D", "#D3BB7E"],
-      },
+      }
       // {
       //   image: "/images/departements/group/COO.png",
       //   title: "Operational Officer",
