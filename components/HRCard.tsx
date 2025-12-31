@@ -6,6 +6,7 @@ export default function HRCard({
   description,
   image,
   gradient,
+  metrics,
 }: DeptData) {
   let imageMarginTop = "0px";
   if (title === "Executive Officer" || title === "Technical Officer") {
@@ -31,22 +32,34 @@ export default function HRCard({
         </div>
         <div className="flex flex-3 flex-col justify-center gap-6 p-8 lg:p-12 w-full">
           <div className="flex flex-col gap-3">
-            {title === "Executive Officer" ? (
-              <h3 className="font-heading text-4xl lg:text-6xl font-bold leading-tight text-center">
-                {title}
-              </h3>
-            ) : (
-              <>
-                <h3 className="font-heading text-2xl lg:text-4xl font-bold leading-10">
-                  {title}
-                </h3>
-                <p className="overflow-hidden text-sm lg:text-md text-ellipsis line-clamp-4">
-                  {description}
-                </p>
-              </>
-            )}
+            <h3 className="font-heading text-2xl lg:text-4xl font-bold leading-10">
+              {title}
+            </h3>
+            <p className="overflow-hidden text-sm lg:text-md text-ellipsis line-clamp-4">
+              {description}
+            </p>
           </div>
-          {/*<Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>*/}
+          {metrics && (
+            <div className="flex gap-8 lg:gap-12">
+              <div className="flex flex-col">
+                <span className="font-heading text-3xl lg:text-5xl font-bold">
+                  {metrics.left.value}
+                </span>
+                <span className="text-xs lg:text-sm opacity-90">
+                  {metrics.left.label}
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="font-heading text-3xl lg:text-5xl font-bold">
+                  {metrics.right.value}
+                </span>
+                <span className="text-xs lg:text-sm opacity-90">
+                  {metrics.right.label}
+                </span>
+              </div>
+            </div>
+          )}
+          <Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>
         </div>
       </div>
     </>

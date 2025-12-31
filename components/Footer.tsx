@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex flex-row gap-4 text-2xl">
               <LogoMono className="size-10" />
               <h1>
-                <span className="font-black">AGRO</span>
+                <span className="font-bold">AGRO</span>
                 <span className="font-normal italic">PLUS</span>
               </h1>
             </div>

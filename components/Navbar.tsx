@@ -88,7 +88,7 @@ export default function Navbar() {
         <div id="logo" className="space gap-2 flex flex-row">
           <LogoMono className={`size-7`} />
           <h1>
-            <span className="font-black">AGRO</span>
+            <span className="font-bold">AGRO</span>
             <span className="font-normal italic">PLUS</span>
           </h1>
         </div>

@@ -8,17 +8,17 @@ export default function MetricsSection() {
     () => [
       {
         header: "1st",
-        descrption: "Mobile scanning app with recommendation system",
+        descrption: "Platform pertama nutrisi tanaman lewat daun di Indonesia",
         imagePath: "/images/scan-plant.png",
       },
       {
-        header: "85%",
-        descrption: "Akurasi deteksi penyakit pada tanaman",
+        header: "77%",
+        descrption: "Akurasi dalam pendeteksian spesies kopi lewat daun",
         imagePath: "/images/woman-farmer.jpg",
       },
       {
-        header: "Agriculture AI",
-        descrption: "Agriculture-Focused AI & Trained on Local Crop Data",
+        header: "10000+",
+        descrption: "Dataset tanaman kopi untuk AI kami yang terlatih khusus untuk bidang pertanian",
         imagePath: "/images/ai.png",
       },
       {
