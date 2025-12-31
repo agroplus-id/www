@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth overflow-x-hidden">
       <head>
         <meta name="apple-mobile-web-app-title" content="Agroplus" />
       </head>
-      <body className={`${dmSans.variable} ${fjGrotesk.variable} antialiased`}>
+      <body className={`${dmSans.variable} ${fjGrotesk.variable} antialiased overflow-x-hidden`}>
         <Navbar />
         {children}
         <Footer />
