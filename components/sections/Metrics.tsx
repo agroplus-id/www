@@ -7,14 +7,19 @@ export default function MetricsSection() {
   const metrics = useMemo(
     () => [
       {
-        header: "574+ Ha",
-        descrption: "Lahan telah diadopsi Agroplus",
-        imagePath: "/images/rice-fields.jpg",
+        header: "1st",
+        descrption: "Mobile scanning app with recommendation system",
+        imagePath: "/images/scan-plant.png",
       },
       {
-        header: "97%",
+        header: "85%",
         descrption: "Akurasi deteksi penyakit pada tanaman",
         imagePath: "/images/woman-farmer.jpg",
+      },
+      {
+        header: "Agriculture AI",
+        descrption: "Agriculture-Focused AI & Trained on Local Crop Data",
+        imagePath: "/images/ai.png",
       },
       {
         header: "8 Institiusi",
