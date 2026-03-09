@@ -5,6 +5,18 @@ import Image from "next/image";
 export default function PartnersSection() {
   const partners = useMemo(
     () => [
+       {
+        name: "ub",
+        path: "/images/partners/ub.png",
+      },
+       {
+        name: "fp",
+        path: "/images/partners/fp_ub.png",
+      },
+       {
+        name: "filkom",
+        path: "/images/partners/filkom.png",
+      },
       {
         name: "Gerakan Nasioinal 1000 Startup Digital",
         path: "/images/partners/1000-startup.png",
@@ -34,6 +46,26 @@ export default function PartnersSection() {
         name: "UK Indonesia Tech HUB",
         path: "/images/partners/UKID-tech-hub.png",
       },
+      {
+        name: "pertamuda",
+        path: "/images/partners/pertamuda.png",
+      },
+      {
+        name: "wandhe",
+        path: "/images/partners/wandhe.png",
+      },
+      {
+        name: "UK Indonesia Tech HUB",
+        path: "/images/partners/UKID-tech-hub.png",
+      },
+      {
+        name: "kopi",
+        path: "/images/partners/kopi.png",
+      },
+      {
+        name: "gambar",
+        path: "/images/partners/gambar.png",
+      },
     ],
     [],
   );
@@ -45,12 +77,12 @@ export default function PartnersSection() {
         className="section-bg bg-agro-green-100 text-agro-green-600"
       >
         <div className="section-content py-16 flex flex-col gap-16 items-center">
-          <div id="comprof-header" className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-            <h2 className="flex-1 heading-2">
+          <div id="comprof-header" className="flex flex-col lg:flex-row gap-4">
+            <h2 className="flex flex-1 heading-2">
               Mitra yang Berperan Bersama Kami dalam Mewujudkan Layanan Terbaik
               bagi Petani Indonesia
             </h2>
-            <p className="flex-1">
+            <p className="flex flex-1">
               <span className="font-bold">Agroplus</span> tidak dapat mewujudkan misi yang kami cita-citakan
               sendirian. Dukungan dari berbagai institusi dan mitra strategis
               menjadi bagian penting dalam perjalanan kami untuk menghadirkan
