@@ -4,21 +4,26 @@ export default function ComprofSection() {
   return (
     <section
       id="comprof"
-      className="section-bg bg-agro-green-600 text-agro-green-100"
+      className="section-bg"
+      style={{ background: "linear-gradient(122.07deg, #98bb63 0%, #f1ffdd 100%)" }}
     >
-      <div className="section-content py-16">
+      <div className="section-content py-[88px]">
         <div id="comprof-header" className="flex flex-col lg:flex-row gap-4">
-          <h2 className="flex flex-1 heading-2">
-            Solusi Cerdas untuk Pertanian Indonesia yang Lebih Sehat dan
-            Berkelanjutan
+          <h2
+            className="flex flex-1 heading-2"
+            style={{
+              background: "linear-gradient(90deg, #25330f 0%, #6f992d 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            Mendukung Industri Kopi dari Hulu dengan Teknologi Terpercaya
           </h2>
-          <p className="flex flex-1">
-            Agroplus memberikan solusi cerdas bagi petani dengan menghadirkan
-            inovasi berbasis teknologi yang membantu petani mengelola tanaman,
-            sumber daya, dan hasil panen secara lebih efisien. Agroplus berupaya
-            menciptakan ekosistem pertanian yang tidak hanya produktif, tetapi
-            juga ramah lingkungan dan mampu mendukung kesejahteraan petani dalam
-            jangka panjang.
+          <p className="flex flex-1 text-agro-green-500">
+            AgroPlus menghadirkan solusi digital dan cerdas yang membantu pelaku
+            industri kopi memahami kondisi tanaman, mengelola kebun secara lebih
+            efisien, dan meningkatkan kualitas hasil secara berkelanjutan.
           </p>
         </div>
       </div>

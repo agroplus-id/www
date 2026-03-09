@@ -89,7 +89,8 @@ export default function HRSection() {
   return (
     <section
       id="hr"
-      className="section-bg bg-agro-green-600 text-agro-green-100"
+      className="section-bg text-agro-green-500"
+      style={{ background: "linear-gradient(122.07deg, #98BB63 0%, #F1FFDD 100%)" }}
     >
       <div className="flex flex-col section-content overflow-visible py-16 gap-20">
         <div
@@ -100,7 +101,7 @@ export default function HRSection() {
             Individu-Individu yang Berperan di Balik Terwujudnya Agroplus
           </h2>
           <p className="w-full lg:max-w-sm">
-            Agroplus bukanlah hasil kerja satu orang saja, melainkan buah dari
+            <span className="font-bold">Agroplus</span> bukanlah hasil kerja satu orang saja, melainkan buah dari
             kolaborasi berbagai individu yang memiliki visi dan tujuan yang
             sama.
           </p>

@@ -153,10 +153,34 @@ export default function Carousel({ children, className }: CarouselProps) {
           maskRepeat: "no-repeat",
         }}
       >
-        <div className="embla overflow-hidden" ref={emblaRef}>
-          <div className="embla__container flex flex-row touch-pan-y touch-pinch-zoom">
-            {slides}
+        <div className="relative">
+        //Prev Button
+          <button
+            onClick={() => emblaApi?.scrollPrev()}
+            className="absolute left-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-agro-green-200 transition-colors"
+            aria-label="Previous"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24" height="24" fill="currentColor">
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
+            </svg>
+          </button>
+
+          <div className="embla overflow-hidden" ref={emblaRef}>
+            <div className="embla__container flex flex-row touch-pan-y touch-pinch-zoom">
+              {slides}
+            </div>
           </div>
+
+          // Next button
+          <button
+            onClick={() => emblaApi?.scrollNext()}
+            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-agro-green-200 transition-colors"
+            aria-label="Next"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24" height="24" fill="currentColor">
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+            </svg>
+          </button>
         </div>
         <CarouselIndicator emblaApi={emblaApi} />
       </div>
