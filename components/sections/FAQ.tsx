@@ -1,6 +1,6 @@
 "use client";
 
-import FAQ from "@/dtos/FAQ";
+import FAQ from "@/data/FAQ";
 import { useMemo, useState } from "react";
 import ArrowDown from "../icons/ArrowDown";
 import { AnimatePresence, motion } from "motion/react";
