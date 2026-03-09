@@ -6,10 +6,10 @@ import YoutubeIcon from "./icons/socials/youtube";
 
 export default function Footer() {
   return (
-    <section className="section-bg bg-[#132E49] text-agro-green-100">
-      <div className="section-content text-xs flex flex-col gap-8 py-16 divide-y-2 divide-agro-green-100 divide-solid">
+    <section className="section-bg bg-linear-to-r from-[#98bb63] to-[#deffad] text-agro-green-500">
+      <div className="section-content text-xs flex flex-col gap-8 py-16 divide-y-2 divide-agro-green-500 divide-solid">
         {/*main part*/}
-        <div className="flex flex-col gap-8 pb-8">
+        <div className="flex flex-col gap-8 pb-8 divide-agro-green-500">
           {/*footer head*/}
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4 text-2xl">
@@ -20,9 +20,10 @@ export default function Footer() {
               </h1>
             </div>
             <p className="max-w-sm">
-              <span className="font-medium">Agroplus</span> adalah platform
-              pertanian berbasis AI yang membantu petani Indonesia meningkatkan
-              produktivitas dan efisiensi pertanian.
+              <span className="font-semibold">AgroPlus</span> adalah startup Agritech berbasis AI yang berfokus pada sektor hulu
+              industri kopi Indonesia dan mengembangkan berbagai solusi teknologi
+              untuk membantu petani meningkatkan produktivitas serta pengambilan
+              keputusan budidaya.
             </p>
           </div>
 

@@ -3,6 +3,7 @@
 import FAQ from "@/data/FAQ";
 import { useMemo, useState } from "react";
 import ArrowDown from "../icons/ArrowDown";
+import ChevronRight from "../icons/ChevronRight";
 import { AnimatePresence, motion } from "motion/react";
 
 export default function FAQSection() {
@@ -50,13 +51,19 @@ export default function FAQSection() {
               layout
               key={i}
               transition={{ layout: { duration: 0.1, ease: "easeInOut" } }}
-              className="flex flex-col relative gap-4 pb-8 h-fit"
+              className="flex flex-col relative gap-4 pb-8 h-fit cursor-pointer"
               onClick={() => setActiveIndex(i)}
             >
-              <button className="-right-4 -top-4 p-4 hidden lg:absolute">
-                <ArrowDown size={36} />
-              </button>
-              <h3 className="text-2xl font-semibold">{q.question}</h3>
+              <div className="flex flex-row items-start justify-between gap-4">
+                <h3 className="text-2xl font-semibold">{q.question}</h3>
+                <span className="shrink-0 mt-1">
+                  {activeIndex === i ? (
+                    <ArrowDown size={28} />
+                  ) : (
+                    <ChevronRight size={28} />
+                  )}
+                </span>
+              </div>
               <AnimatePresence>
                 {activeIndex == i && (
                   <motion.div
@@ -74,6 +81,7 @@ export default function FAQSection() {
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

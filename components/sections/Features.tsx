@@ -1,76 +1,69 @@
 "use client";
 
-import { useState } from "react";
-import VideoPlayer from "../VideoPlayer";
-
-const textContent = [
-  {
-    h: "Marketplace untuk Semua Kebutuhan Pertanian yang Anda Butuhkan",
-    p: "Temukan berbagai kebutuhan pertanian dalam satu tempat, mulai dari pupuk, bibit, hingga pestisida berkualitas. Fitur marketplace memudahkan petani mendapatkan produk terpercaya dengan harga yang kompetitif dan pengiriman yang cepat.",
-    video: "/videos/demo/marketplace.mp4",
-  },
-  {
-    h: "Konsultasi Langsung dengan Ahli Pertanian Mengenai Tanaman Anda",
-    p: "Dapatkan jawaban cepat dan akurat dari para pakar. Melalui fitur konsultasi, petani dapat berdiskusi langsung dengan ahli pertanian untuk memperoleh solusi dan saran terbaik bagi tanaman mereka.",
-    video: "/videos/demo/konsul.mp4",
-  },
-  {
-    h: "Analisis Tanaman dan Rekomendasi menggunakan Computer Vision",
-    p: "Deteksi kondisi tanaman hanya dengan satu foto. Teknologi AI dan computer vision Agroplus membantu mengidentifikasi penyakit serta kekurangan nutrisi, lalu memberikan rekomendasi pemupukan dan perawatan yang disesuaikan dengan kondisi cuaca dan lingkungan.",
-    video: "/videos/demo/scan-tanaman.mp4",
-  },
-  {
-    h: "Lelang Hasil Panen Anda Langsung Secara Real-time",
-    p: "Tingkatkan nilai jual hasil panen melalui sistem lelang digital yang transparan dan efisien. Petani dapat menawarkan hasil panennya langsung dari aplikasi dan terhubung dengan pembeli secara real-time, tanpa perantara dan tanpa batas lokasi.",
-    video: "/videos/demo/lelang.mp4",
-  },
-];
+import Button from "../buttons/Button";
+import ChevronRight from "../icons/ChevronRight";
+import Image from "next/image";
 
 export default function FeaturesSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
-    <section id="features" className="section-bg h-fit bg-agro-green-100">
-      <div className="section-content flex flex-col lg:flex-row py-16 gap-8 h-fit min-h-min lg:h-screen w-full text-agro-green-600">
-        {/*phone section*/}
-        <div className="flex flex-2 w-full h-full section-content items-center justify-center">
-          <div className="aspect-9/18.5 rounded-[50px] bg-white w-fit border-8 shadow-2xl border-agro-green-600 overflow-clip">
-            <VideoPlayer
-              src={textContent[activeIndex].video}
-              controls={false}
-              muted
-              loop
-              autoPlay
-              height={720}
-              width={333}
-              className="aspect-9/18.5 w-2xs"
+    <section id="features" className="section-bg h-fit bg-agro-green-100 py-16">
+      <div className="section-content">
+        <div className="bg-linear-to-br from-[#f5f5f5] to-[#98bb63] rounded-[50px] shadow-2xl overflow-hidden relative min-h-[860px] flex flex-col lg:flex-row">
+          {/* Left content */}
+          <div className="flex flex-col flex-1 z-10 p-10 lg:pl-10 lg:pt-[108px] lg:pb-10">
+            {/* Heading + Logo*/}
+            <div className="relative h-11 mb-[91px]">
+              <h2 className="text-agro-green-500 font-heading font-bold text-[70px] leading-[44px] tracking-tight whitespace-nowrap">
+                Project kami
+              </h2>
+              <Image
+                src="/images/logo_project.svg"
+                alt="Ferroir"
+                width={220}
+                height={44}
+                className="absolute top-0 left-[390px] object-contain object-left"
+              />
+            </div>
+
+            <div className="text-agro-green-500 space-y-5 text-xl max-w-[680px]">
+              <p>
+                Kami percaya bahwa inovasi selalu berawal dari masalah sederhana yang
+                dialami manusia. Bagi kami, itu dimulai dari industri kopi.
+              </p>
+              <p>
+                Ferroir adalah langkah awal kami untuk menghadirkan teknologi yang
+                membantu pelaku industri kopi memahami kualitas kopi mereka dengan lebih
+                mudah dan akurat. Melalui analisis citra dan pemrosesan data, Ferroir
+                mampu mengevaluasi karakteristik biji kopi secara cepat dan konsisten,
+                membantu pengambilan keputusan yang lebih tepat dalam proses grading dan
+                quality control.
+              </p>
+              <p>
+                Ferroir bukan sekadar alat analisis, ini adalah bukti bahwa teknologi
+                dapat menjadi mitra cerdas yang meningkatkan transparansi, efisiensi,
+                dan kualitas di sepanjang rantai nilai kopi.
+              </p>
+            </div>
+
+            <div className="mt-auto pt-8">
+              <Button
+                href="#contacts"
+                className="!bg-agro-green-400 !text-agro-green-200"
+                rightIcon={<ChevronRight color="#deffad" />}
+              >
+                Lihat Lebih Banyak
+              </Button>
+            </div>
+          </div>
+
+          <div className="lg:w-[461px] relative min-h-[400px] lg:min-h-0">
+            <Image
+              src="/images/project.png"
+              alt="Ferroir project"
+              fill
+              className="object-contain object-center"
             />
           </div>
-        </div>
-        {/*text  section*/}
-        <div className="flex flex-3 flex-col gap-6 justify-center">
-          {textContent.map(({ h, p }, i) => {
-            const isActive = activeIndex == i;
-            const activate = () => setActiveIndex(i);
-
-            return (
-              <div
-                key={i}
-                className={`flex flex-col gap-6 transition-opacit duration-150y ${isActive ? "opacicity-100" : "opacity-50"}`}
-              >
-                <button onMouseEnter={activate}>
-                  <h2 className="heading-2 text-center lg:text-left">{h}</h2>
-                </button>
-                <div
-                  className={`grid transition-all duration-150 overflow-hidden ease-in-out ${activeIndex == i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="text-center lg:text-left">{p}</p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
         </div>
       </div>
     </section>
