@@ -154,10 +154,9 @@ export default function Carousel({ children, className }: CarouselProps) {
         }}
       >
         <div className="relative">
-        //Prev Button
           <button
             onClick={() => emblaApi?.scrollPrev()}
-            className="absolute left-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-agro-green-200 transition-colors"
+            className="absolute left-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Previous"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24" height="24" fill="currentColor">
@@ -171,10 +170,9 @@ export default function Carousel({ children, className }: CarouselProps) {
             </div>
           </div>
 
-          // Next button
           <button
             onClick={() => emblaApi?.scrollNext()}
-            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-agro-green-200 transition-colors"
+            className="absolute right-8 top-1/2 -translate-y-1/2 z-10 bg-agro-green-100 text-agro-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Next"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24" height="24" fill="currentColor">
