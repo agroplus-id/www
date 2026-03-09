@@ -7,8 +7,8 @@ export default function LandingSection() {
   return (
     <section className="section-bg relative">
       <Image
-        src="/images/farmer-plowing-field.jpg"
-        alt="Farmer plowing field using bull"
+        src="/images/hands-coffe.png"
+        alt="hands holding coffee plant"
         fill
         className="object-cover -z-20"
       />
