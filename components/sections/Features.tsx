@@ -48,7 +48,7 @@ export default function FeaturesSection() {
             <div className="mt-auto pt-8">
               <Button
                 href="#contacts"
-                className="!bg-agro-green-400 !text-agro-green-200"
+                className="bg-agro-green-400! !text-agro-green-200"
                 rightIcon={<ChevronRight color="#deffad" />}
               >
                 Lihat Lebih Banyak

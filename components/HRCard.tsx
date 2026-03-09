@@ -18,7 +18,7 @@ export default function HRCard({
       <div
         className="flex flex-col-reverse lg:flex-row aspect-4/3 lg:aspect-video w-full rounded-4xl gap-4 overflow-hidden"
         style={{
-          background: `radial-gradient(at 25% 25%, ${gradient[1]}, ${gradient[0]} )`,
+          background: `radial-gradient(circle at 25% 25%, #FFFFFF, #999999)`,
         }}
       >
         <div className="flex flex-2 relative justify-end content-end h-full aspect-3/4">
@@ -59,7 +59,7 @@ export default function HRCard({
               </div>
             </div>
           )}
-          <Button style={{ color: gradient[0] }}>Lihat Lebih Banyak</Button>
+          <Button style={{ color: "#DEFFAD", background: "#45552D" }}>Lihat Lebih Banyak</Button>
         </div>
       </div>
     </>

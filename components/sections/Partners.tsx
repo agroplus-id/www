@@ -82,14 +82,8 @@ export default function PartnersSection() {
               Mitra yang Berperan Bersama Kami dalam Mewujudkan Layanan Terbaik
               bagi Petani Indonesia
             </h2>
-            <p className="flex flex-1">
-              <span className="font-bold">Agroplus</span> tidak dapat mewujudkan misi yang kami cita-citakan
-              sendirian. Dukungan dari berbagai institusi dan mitra strategis
-              menjadi bagian penting dalam perjalanan kami untuk menghadirkan
-              layanan terbaik bagi petani di seluruh Indonesia. Melalui
-              kolaborasi ini, <span className="font-bold">Agroplus</span> terus memperkuat komitmennya dalam
-              membangun ekosistem pertanian yang lebih inklusif, efisien, dan
-              berkelanjutan.
+            <p className="flex-1">
+              <span className="font-bold">Agroplus</span>{" "}tidak dapat mewujudkan misi yang kami cita-citakan sendirian. Dukungan dari berbagai institusi dan mitra strategis menjadi bagian penting dalam perjalanan kami untuk menghadirkan layanan terbaik bagi petani di seluruh Indonesia. Melalui kolaborasi ini, <span className="font-bold">Agroplus</span>{" "}terus memperkuat komitmennya dalam membangun ekosistem pertanian yang lebih inklusif, efisien, dan berkelanjutan.
             </p>
           </div>
           <div

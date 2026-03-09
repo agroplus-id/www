@@ -8,78 +8,45 @@ export default function HRSection() {
   const deptData: DeptData[] = useMemo(
     () => [
       {
-        image: "/images/departements/group/CTO.svg",
-        title: "Technical Officer",
+        image: "/images/departements/group/CTO.png",
+        title: "RnD Division",
         description:
-          "Departemen CTO menghadirkan inovasi yang nyata dan berdampak dari kecerdasan buatan hingga pengembangan sistem digital memastikan setiap teknologi yang dikembangkan memperkuat daya saing AGROPLUS di era modern.",
+          "Divisi R&D berfokus pada riset dan pengembangan inovasi untuk menciptakan solusi pertanian berbasis teknologi. Tim ini memastikan setiap produk AgroPlus lahir dari riset yang kuat, relevan, dan berdampak nyata bagi produktivitas petani.",
         gradient: ["#C5A34D", "#D3BB7E"],
-        metrics: {
-          left: {
-            value: "97%",
-            label: "Tingkat Kepuasan Anggota Kami"
-          },
-          right: {
-            value: "45 hari",
-            label: "Waktu pengembangan sistem dapat diselesaikan"
-          }
-        }
       },
       {
         image: "/images/departements/group/CFO.png",
-        title: "Chief Financial Officer",
+        title: "Finance Division",
         description:
-          "Departemen CFO menciptakan dampak yang terukur pada setiap tindakan AGROPLUS. Mulai dari stabilitas keuangan hingga analisis keuangan yang mendalam, memastikan setiap langkah selaras dengan visi pertumbuhan perusahaan kami.",
+          "Divisi Financial mengelola strategi keuangan perusahaan, mulai dari perencanaan hingga pengawasan anggaran. Tujuannya memastikan pertumbuhan AgroPlus berjalan stabil, transparan, dan berkelanjutan.",
         gradient: ["#C5A34D", "#D3BB7E"],
-        metrics: {
-          left: {
-            value: "6+",
-            label: "Porsi hukum anak kontak profesional"
-          },
-          right: {
-            value: "3+",
-            label: "Standar proyeksi finansial & kebijakan internal"
-          }
-        }
+      },
+      {
+        image: "/images/departements/group/CTO.svg",
+        title: "Technology Division",
+        description:
+          "Divisi Technology membangun dan mengembangkan sistem digital AgroPlus, mulai dari pengelolaan data hingga pengembangan platform berbasis teknologi. Tim ini menjadi motor utama transformasi pertanian melalui inovasi digital.",
+        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
         image: "/images/departements/group/CMO.png",
-        title: "Chief Marketing Officer",
+        title: "Marketing Division",
         description:
-          "Departemen CMO berkomitmen untuk menciptakan strategi pemasaran yang berdampak, kreatif, dan terukur. Kami memastikan setiap kampanye berkontribusi nyata terhadap pertumbuhan AGROPLUS dan peningkatan kepercayaan publik terhadap inovasi di Startup kami",
+          "Divisi Marketing bertanggung jawab memperluas jangkauan dan dampak AgroPlus melalui strategi komunikasi, branding, dan kampanye pemasaran yang kreatif dan efektif.",
         gradient: ["#C5A34D", "#D3BB7E"],
-        metrics: {
-          left: {
-            value: "10+",
-            label: "Kampanye Pemasaran Strategis"
-          },
-          right: {
-            value: "30k",
-            label: "Views sebagai kampanye kami terbanyak"
-          }
-        }
       },
       {
         image: "/images/departements/group/COO.png",
-        title: "Operational Officer",
+        title: "Legal & Operational Division",
         description:
-          "Departemen COO memastikan AGROPLUS terus bergerak dengan keunggulan operasional, kolaborasi yang baik dan efisiensi berkelanjutan. Dengan fokus pada eksekusi yang presisi, manajemen sumber daya yang efektif, dan kemitraan yang saling menguatkan, kami menciptakan fondasi kokoh bagi pertumbuhan jangka panjang perusahaan.",
+          "Divisi Legal & Operational memastikan seluruh aktivitas perusahaan berjalan sesuai regulasi serta didukung sistem operasional yang efisien dan terstruktur.",
         gradient: ["#C5A34D", "#D3BB7E"],
-        metrics: {
-          left: {
-            value: "8+",
-            label: "Mitra strategis yang mendukung eksekusi optimal"
-          },
-          right: {
-            value: "16+",
-            label: "Karyawan profesional kunci dalam operasi"
-          }
-        }
       },
       {
         image: "/images/departements/group/CEO1.svg",
-        title: "Executive Officer",
+        title: "Steering Comitee",
         description:
-          "Sebagai Executive Officer berperan menjadi penggerak utama arah strategis dan keberlanjutan bisnis AgroPlus. Posisi ini bertanggung jawab dalam pengambilan keputusan strategis, membangun kemitraan, serta memastikan seluruh lini organisasi berjalan selaras dengan visi dan misi perusahaan. Executive Officer juga berfokus pada pengembangan model bisnis, kepemimpinan tim, serta representasi AgroPlus di hadapan mitra, investor, dan pemangku kepentingan.",
+          "Steering Committee berperan sebagai penasihat strategis yang memberikan arahan, pengalaman, dan perspektif untuk memastikan AgroPlus berkembang secara terarah dan berkelanjutan.",
         gradient: ["#C5A34D", "#D3BB7E"],
       },
     ],
