@@ -8,8 +8,8 @@ export default function MetricsSection() {
     () => [
       {
         header: "1st",
-        descrption: "Platform pertama nutrisi tanaman lewat daun di Indonesia",
-        imagePath: "/images/scan-plant.png",
+        descrption: "Platform nutrisi tanaman lewat foto daun di Indonesia.",
+        imagePath: "/images/rice-fields.jpg",
       },
       {
         header: "77%",
@@ -17,13 +17,8 @@ export default function MetricsSection() {
         imagePath: "/images/woman-farmer.jpg",
       },
       {
-        header: "10000+",
+        header: "10.000+",
         descrption: "Dataset tanaman kopi untuk AI kami yang terlatih khusus untuk bidang pertanian",
-        imagePath: "/images/ai.png",
-      },
-      {
-        header: "8 Institiusi",
-        descrption: "Telah bekerjasama dengan Agroplus",
         imagePath: "/images/handshake.jpg",
       },
     ],
@@ -33,19 +28,21 @@ export default function MetricsSection() {
   return (
     <section
       id="metrics"
-      className="section-bg bg-agro-green-600 text-agro-green-100"
+      className="section-bg text-agro-green-500"
+      style={{ background: "linear-gradient(122.07deg, #98BB63 0%, #F1FFDD 100%)" }}
     >
       <div className="section-content flex flex-col gap-20 py-16 items-center">
         <div className="flex flex-col gap-6 max-w-3xl">
           <h2 className="heading-2 text-center">
-            Perkembangan dan Pertumbuhan Kami bersama Para Petani Hingga Saat
-            ini
+            Perkembangan dan Pertumbuhan AgroPlus dalam Mendukung Industri Kopi
+            Indonesia
           </h2>
           <p className="text-center">
-            Agroplus lahir dari tekad untuk memajukan pertanian Indonesia
-            melalui inovasi teknologi. Dengan menghadirkan solusi terpadu dari
-            hulu hingga hilir, Agroplus membantu petani bertransformasi menuju
-            pertanian yang lebih cerdas, efisien, dan berkelanjutan.
+            <span className="font-bold">AgroPlus</span> hadir untuk memperkuat sektor hulu industri kopi melalui teknologi
+            yang andal dan mudah diakses. Dengan menghadirkan solusi yang membantu
+            memahami tanaman, meningkatkan produktivitas, dan mendukung
+            pengelolaan budidaya yang lebih efisien, AgroPlus berupaya mendorong
+            pertumbuhan industri kopi yang lebih berkelanjutan.
           </p>
         </div>
         <div className="grid grid-cols-2 justify-items-stretch lg:flex lg:flex-row gap-4 justify-center w-full">
@@ -63,7 +60,7 @@ export default function MetricsSection() {
               />
               <div className="absolute bottom-0 left-0 size-full bg-linear-to-t from-black from-5% via-black/60 via-25% to-black/0 to-50%" />
               <div className="text-agro-green-100 flex flex-col gap-2 z-20">
-                <h3 className="font-bold text-xl lg:text-4xl w-full text-agro-green-300">
+                <h3 className="font-bold text-xl lg:text-4xl w-full text-agro-green-100">
                   {v.header}
                 </h3>
                 <p className="w-full text-xs lg:text-lg">{v.descrption}</p>
