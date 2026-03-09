@@ -1,8 +1,8 @@
 type DeptData = {
   image: string;
+  modalImage?: string;
   title: string;
   description: string;
-  gradient: [string, string];
   metrics?: {
     left: {
       value: string;

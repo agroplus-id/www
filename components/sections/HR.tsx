@@ -8,46 +8,46 @@ export default function HRSection() {
   const deptData: DeptData[] = useMemo(
     () => [
       {
-        image: "/images/departements/group/CTO.png",
+        image: "/images/departements/group/dept_research.svg",
+        modalImage: "/images/research.svg",
         title: "RnD Division",
         description:
           "Divisi R&D berfokus pada riset dan pengembangan inovasi untuk menciptakan solusi pertanian berbasis teknologi. Tim ini memastikan setiap produk AgroPlus lahir dari riset yang kuat, relevan, dan berdampak nyata bagi produktivitas petani.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
-        image: "/images/departements/group/CFO.png",
+        image: "/images/departements/group/dep_finance.svg",
+        modalImage: "/images/finance.svg",
         title: "Finance Division",
         description:
           "Divisi Financial mengelola strategi keuangan perusahaan, mulai dari perencanaan hingga pengawasan anggaran. Tujuannya memastikan pertumbuhan AgroPlus berjalan stabil, transparan, dan berkelanjutan.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
         image: "/images/departements/group/CTO.svg",
+        modalImage: "/images/tech.svg",
         title: "Technology Division",
         description:
           "Divisi Technology membangun dan mengembangkan sistem digital AgroPlus, mulai dari pengelolaan data hingga pengembangan platform berbasis teknologi. Tim ini menjadi motor utama transformasi pertanian melalui inovasi digital.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
-        image: "/images/departements/group/CMO.png",
+        image: "/images/departements/group/dep_marketing.svg",
+        modalImage: "/images/marketing.svg",
         title: "Marketing Division",
         description:
           "Divisi Marketing bertanggung jawab memperluas jangkauan dan dampak AgroPlus melalui strategi komunikasi, branding, dan kampanye pemasaran yang kreatif dan efektif.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
-        image: "/images/departements/group/COO.png",
+        image: "/images/departements/group/dep_legal_operation.svg",
+        modalImage: "/images/legalandoperation.svg",
         title: "Legal & Operational Division",
         description:
           "Divisi Legal & Operational memastikan seluruh aktivitas perusahaan berjalan sesuai regulasi serta didukung sistem operasional yang efisien dan terstruktur.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
       {
-        image: "/images/departements/group/CEO1.svg",
+        image: "/images/departements/group/dep_steering.svg",
+        modalImage: "/images/steering.svg",
         title: "Steering Comitee",
         description:
           "Steering Committee berperan sebagai penasihat strategis yang memberikan arahan, pengalaman, dan perspektif untuk memastikan AgroPlus berkembang secara terarah dan berkelanjutan.",
-        gradient: ["#C5A34D", "#D3BB7E"],
       },
     ],
     [],
