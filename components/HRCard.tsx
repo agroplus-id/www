@@ -35,7 +35,7 @@ export default function HRCard({
             <h3 className="font-heading text-2xl lg:text-4xl font-bold leading-10">
               {title}
             </h3>
-            <p className="overflow-hidden text-sm lg:text-md text-ellipsis line-clamp-4">
+            <p className="overflow-hidden text-base text-ellipsis line-clamp-4">
               {description}
             </p>
           </div>
@@ -79,7 +79,11 @@ export default function HRCard({
           onClick={() => setModalOpen(false)}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
-          <div className="relative z-10" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="relative z-10 bg-white rounded-2xl shadow-2xl flex flex-col"
+            style={{ width: "min(90vw, 700px)", height: "min(88vh, 700px)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={() => setModalOpen(false)}
               className="absolute -top-4 -right-4 bg-white rounded-full w-9 h-9 flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform z-20"
@@ -89,11 +93,13 @@ export default function HRCard({
                 <path d="M1 1L12 12M12 1L1 12" stroke="#45552D" strokeWidth="2.2" strokeLinecap="round" />
               </svg>
             </button>
-            <img
-              src={modalImage}
-              alt={title}
-              className="max-h-[88vh] max-w-[90vw] rounded-2xl shadow-2xl"
-            />
+            <div className="overflow-y-auto rounded-2xl flex-1">
+              <img
+                src={modalImage}
+                alt={title}
+                className="w-full h-auto block"
+              />
+            </div>
           </div>
         </div>,
         document.body
