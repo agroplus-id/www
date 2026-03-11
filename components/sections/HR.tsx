@@ -11,6 +11,7 @@ export default function HRSection() {
         image: "/images/departements/group/dep_research.svg",
         modalImage: "/images/rnd.svg",
         title: "RnD Division",
+        imageWrapperClassName: "scale-[1.2] origin-bottom",
         description:
           "Divisi R&D berfokus pada riset dan pengembangan inovasi untuk menciptakan solusi pertanian berbasis teknologi. Tim ini memastikan setiap produk AgroPlus lahir dari riset yang kuat, relevan, dan berdampak nyata bagi produktivitas petani.",
       },
@@ -32,6 +33,7 @@ export default function HRSection() {
         image: "/images/departements/group/dep_marketing.svg",
         modalImage: "/images/marketing.svg",
         title: "Marketing Division",
+        imageWrapperClassName: "scale-[1.2] origin-bottom",
         description:
           "Divisi Marketing bertanggung jawab memperluas jangkauan dan dampak AgroPlus melalui strategi komunikasi, branding, dan kampanye pemasaran yang kreatif dan efektif.",
       },

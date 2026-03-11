@@ -3,6 +3,7 @@ type DeptData = {
   modalImage?: string;
   title: string;
   description: string;
+  imageWrapperClassName?: string;
   metrics?: {
     left: {
       value: string;

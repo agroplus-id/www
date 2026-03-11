@@ -10,6 +10,7 @@ export default function HRCard({
   image,
   modalImage,
   metrics,
+  imageWrapperClassName,
 }: DeptData) {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -21,7 +22,7 @@ export default function HRCard({
           background: `radial-gradient(circle at 25% 25%, #FFFFFF, #999999)`,
         }}
       >
-        <div className="flex flex-2 relative h-full aspect-3/4">
+        <div className={`flex flex-2 relative h-full aspect-3/4 ${imageWrapperClassName ?? ""}`}>
           <Image
             src={image}
             alt=""
