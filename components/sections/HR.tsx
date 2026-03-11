@@ -8,8 +8,8 @@ export default function HRSection() {
   const deptData: DeptData[] = useMemo(
     () => [
       {
-        image: "/images/departements/group/dept_research.svg",
-        modalImage: "/images/research.svg",
+        image: "/images/departements/group/dep_research.svg",
+        modalImage: "/images/rnd.svg",
         title: "RnD Division",
         description:
           "Divisi R&D berfokus pada riset dan pengembangan inovasi untuk menciptakan solusi pertanian berbasis teknologi. Tim ini memastikan setiap produk AgroPlus lahir dari riset yang kuat, relevan, dan berdampak nyata bagi produktivitas petani.",
@@ -38,7 +38,7 @@ export default function HRSection() {
       {
         image: "/images/departements/group/dep_legal_operation.svg",
         modalImage: "/images/legalandoperation.svg",
-        title: "Legal & Operational Division",
+        title: "Legal, Logistic & Operational Division",
         description:
           "Divisi Legal & Operational memastikan seluruh aktivitas perusahaan berjalan sesuai regulasi serta didukung sistem operasional yang efisien dan terstruktur.",
       },
